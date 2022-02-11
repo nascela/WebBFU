@@ -6,7 +6,9 @@ $order = &$very_bad_unclear_name;
 $order .=" and a bear";
 
  echo"\nYour order is:$very_bad_unclear_name."."<br>";
+
 //числа
+
 $Number = 42;
 echo $Number."<br>";
 $MyNumber = 13;
@@ -17,11 +19,26 @@ echo ($Number - $MyNumber - 17)."<br>";
 $lastMonth = 1187.23;
 $thisMonth = 1089.98;
 echo ($lastMonth-$thisMonth)."<br>";
+
 //11(3) Умножение и деление
+
 $numLanguages = 4;
 $months = 11;
 $days = 16;
 $daysPerLanguage = ($days * $months) / $numLanguages;
 echo "$daysPerLanguage"."<br>";
+
 //12(4) cтепень
+
 echo (8 ** 2)."<br>";
+
+//13(5) Операторы присвоения
+
+$myNum = 349;
+$answer = $myNum;
+$answer +=2;
+$answer *=2;
+$answer -=2;
+$answer /=2;
+$answer -=$myNum;
+echo $answer."<br>";
