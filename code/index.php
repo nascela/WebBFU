@@ -110,4 +110,13 @@ foreach ($arr4 as $value) {
     }
 }
 
+//15(7) Функции
+
+function printStringReturnNumber(string $string):int
+{
+    echo $string."<br>";
+    return 42;
+}
+$myNum = printStringReturnNumber('hello world!!!');
+echo $myNum."<br>";
 
