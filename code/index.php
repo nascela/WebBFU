@@ -268,3 +268,13 @@ $arr = [3, 2, 3];
 $sum = array_sum($arr);
 echo (sizeof($arr) == 3) ? "{$sum}<br>" : "No" ;
 
+//19(11) cycles
+
+for ($i = 1; $i <= 20; $i++)
+{
+    for ($j = 1; $j <= $i; $j++)
+        echo "x";
+    echo "<br>";
+}
+
+
