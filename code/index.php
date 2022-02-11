@@ -230,3 +230,41 @@ $arr = ['a', 'b', 'c', 'd', 'e'];
 echo sizeof($arr)."<br>";
 echo $arr[sizeof($arr)-1]."<br>";
 echo $arr[sizeof($arr)-2]."<br>";
+
+//18(10) if else
+
+
+function moreThan10(int $a, int $b):bool
+{
+    if ($a+$b > 10) return true;
+    else return false;
+}
+
+function equal(int $a, int $b):bool
+{
+    if ($a == $b ) return true;
+    else return false;
+}
+
+$test = 0;
+echo ($test == 0) ? 'Верно<br>' : 'Неверно<br>';
+
+$age = rand(0, 150);
+echo "age = {$age}<br>";
+if ($age < 10) echo "{$age} is lower than 10<br>";
+else if ($age > 99) echo "{$age} is higher than 99<br>";
+else
+{
+    $sum = 0;
+    for ($i = 0; $i < strlen($age); $i++)
+    {
+        $sum += $age % 10;
+        $age /= 10;
+    }
+    echo ($sum > 9) ? "sum is two-digit<br>" : "sum is one-digit<br>";
+}
+
+$arr = [3, 2, 3];
+$sum = array_sum($arr);
+echo (sizeof($arr) == 3) ? "{$sum}<br>" : "No" ;
+
