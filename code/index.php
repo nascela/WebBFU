@@ -22,4 +22,6 @@ $numLanguages = 4;
 $months = 11;
 $days = 16;
 $daysPerLanguage = ($days * $months) / $numLanguages;
-echo "$daysPerLanguage";
+echo "$daysPerLanguage"."<br>";
+//12(4) cтепень
+echo (8 ** 2)."<br>";
