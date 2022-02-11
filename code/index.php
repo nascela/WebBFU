@@ -120,3 +120,51 @@ function printStringReturnNumber(string $string):int
 $myNum = printStringReturnNumber('hello world!!!');
 echo $myNum."<br>";
 
+//16(8) Функции 2
+
+function increaseEnthusiasm(string $string):string
+{
+    $string.='!';
+    return $string;
+}
+echo increaseEnthusiasm('Hello world')."<br>";
+
+function repeatThreeTimes(string $string):string
+{
+    $string.=$string.$string;
+    return $string;
+}
+echo repeatThreeTimes(increaseEnthusiasm('Hello world'))."<br>";
+
+function cut(string $string, int $int=10):string
+{
+    $ret = "";
+    for($i = 0; $i < $int; $i++)
+        $ret .= $string[$i];
+    return $ret;
+}
+echo cut("I need help ", 6)."<br>";
+
+function arrayPrint($arr, $num)
+{
+    if ($num < sizeof($arr))
+    {
+        echo $arr[$num]." ";
+        arrayPrint($arr, $num+1);
+    }
+}
+$array = array(1,2,3,4,5);
+arrayPrint($array, 0);
+
+function arraySum($num)
+{
+    $sum = 0;
+    while ($num > 0)
+    {
+        $sum+=$num%10;
+        $num/=10;
+    }
+    if ($sum > 9) return arraySum($sum);
+    else return($sum);
+}
+echo "<br>".arraySum(233)."<br>";
