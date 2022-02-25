@@ -70,3 +70,37 @@ if ($_POST['getWordsAndSyms']) {
     }
 }
 echo $_SESSION['textInfo'];
+
+// пункт b
+?>
+
+<body>
+    <form method="POST">
+        <label>
+            NAME<input type="text" name="name" required><br>
+            SURNAME<input type="text" name="surname" required><br>
+            AGE<input type="number" name="age" required><br>
+            <input type="submit" value="Записать в сессию" name="sendToSession">
+        </label>
+    </form>
+    <a href="/UserInfo.php">User Information3</a>
+</body>
+
+<?php
+if ($_POST['sendToSession']) {
+    if ($_POST['name'] && $_POST['surname'] && $_POST['age']) {
+        $_SESSION['name'] = $_POST['name'];
+        $_SESSION['surname'] = $_POST['surname'];
+        $_SESSION['age'] = $_POST['age'];
+    }
+}
+?> 
+
+
+
+
+
+
+
+
+
