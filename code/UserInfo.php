@@ -15,6 +15,13 @@ AGE: {$_SESSION['age']}<br>";
     <title>Document</title>
 </head>
 <body>
+<ul>
+    <?php
+    foreach ($_SESSION['userInfo'] as $key => $value) {
+        echo "<li>$key : $value</li>";
+    }
+    ?>
+</ul>
 <a href="lab3.php">НАЗАД</a>
 </body>
 </html>
