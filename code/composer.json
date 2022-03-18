@@ -1,0 +1,13 @@
+{
+    "name": "webbfu/code",
+    "authors": [
+        {
+            "name": "nascela",
+            "email": "serjono@gmail.com"
+        }
+    ],
+    "require": {
+        "google/apiclient": "2.0",
+        "guzzlehttp/guzzle": "~5.3.1"
+    }
+}
